@@ -9,7 +9,7 @@ from flask import Flask, request, jsonify  # For creating the Flask API
 learn_api = Flask("ExtraaLearn")
 
 # Load the trained churn prediction model
-model = joblib.load("learn_model.joblib")
+model = joblib.load("extralearn_model.joblib")
 
 # Define a route for the home page
 @learn_api.get('/')
